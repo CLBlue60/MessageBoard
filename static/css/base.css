@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; 
+    color: #00FF00;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FF0000;
+    color: #FFFF00;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #FFFF00;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #FFFF00;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

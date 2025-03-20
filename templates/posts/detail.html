@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}{{ object.title }}{% endblock title %}
+
+{% block header %}{{ object.title }}{% endblock header %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="text-success">{{ object.title }}</h2>
+    <p class="text-warning">{{ object.body }}</p>
+    <p class="text-muted">Published on {{ object.created_at }}</p>
+</div>
+{% endblock content %}

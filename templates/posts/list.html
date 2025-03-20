@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Posts{% endblock title %}
+
+{% block header %}All Posts{% endblock header %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="text-success mb-4">Posts</h2>
+    <div class="row">
+        {% for post in object_list %}
+        <div class="col-md-4 mb-4">
+            <div class="card bg-black border-success">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">{{ post.title }}</h5>
+                    <p class="card-text text-warning">
+                        {{ post.subtitle|default:post.body|truncatewords:20 }}
+                    <a href="{% url 'detail' post.pk %}" class="btn btn-success">Read More</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
